@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "build": "electron-builder -mwl",
-    "watch": "nodemon --exec 'electron .'"
+    "watch": "nodemon --exec 'electron .'",
+    "release": "electron-builder -mwl --publish 'onTagOrDraft'"
   },
   "repository": "https://github.com/ikakuca/electronic-service-book",
   "homepage": "https://github.com/ikakuca/electronic-service-book",
@@ -25,6 +26,9 @@
   "build": {
     "appId": "com.vozzi.esb",
     "copyright": "Copyright 2020 KOV Technology doo",
+    "publish": {
+      "provider": "github"
+    },
     "mac": {
       "category": "public.app-category.utilities",
       "target": "dmg"
