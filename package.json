@@ -1,0 +1,39 @@
+{
+  "name": "esb",
+  "version": "1.0.0",
+  "description": "Esb desktop app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder -mwl",
+    "watch": "nodemon --exec 'electron .'"
+  },
+  "repository": "https://github.com/ikakuca/electronic-service-book",
+  "homepage": "https://github.com/ikakuca/electronic-service-book",
+  "author": "vozzi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "8.2.2",
+    "electron-builder": "^22.4.1",
+    "electron-rebuild": "^1.11.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "smartcard": "^1.0.32"
+  },
+  "build": {
+    "appId": "com.vozzi.esb",
+    "copyright": "Copyright 2020 KOV Technology doo",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "zip"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}
