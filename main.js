@@ -22,7 +22,7 @@ function createWindow() {
   mainWindow.loadURL("https://mystifying-liskov-9df921.netlify.app/");
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   const devices = new Devices();
   devices.on("device-activated", onDeviceActivated);
