@@ -1,6 +1,6 @@
 {
   "name": "esb",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Esb desktop app",
   "main": "main.js",
   "scripts": {
