@@ -1,14 +1,15 @@
 {
   "name": "esb",
-  "version": "0.9.0",
+  "version": "1.0.1",
   "description": "Esb desktop app",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder -m",
+    "build": "electron-builder -w",
     "watch": "nodemon --exec 'electron .'",
-    "release": "electron-builder -mwl --publish 'onTagOrDraft'"
+    "release": "electron-builder -w --publish 'onTagOrDraft'",
+    "win-cert": "electron-builder create-self-signed-cert -p vozzi"
   },
   "repository": "https://github.com/ikakuca/electronic-service-book",
   "homepage": "https://github.com/ikakuca/electronic-service-book",
@@ -36,10 +37,10 @@
       "target": "dmg"
     },
     "win": {
-      "target": "zip",
-      "certificateFile": "private/certificate.p12",
+      "certificateFile": "private/vozzi.pfx",
       "certificatePassword": "",
-      "verifyUpdateCodeSignature": false
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "vozzi"
     },
     "linux": {
       "category": "Utility"
