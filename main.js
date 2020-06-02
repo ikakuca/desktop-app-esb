@@ -19,7 +19,7 @@ function createWindow() {
   });
 
   // mainWindow.loadFile('index.html')
-  mainWindow.loadURL("https://romantic-montalcini-b1a25f.netlify.app/");
+  mainWindow.loadURL("https://mystifying-liskov-9df921.netlify.app/");
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();

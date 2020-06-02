@@ -18,3 +18,7 @@ ipcRenderer.on('card-info', (e, card) => {
   global.cardData = card;
   console.log('card-info', e, card)
 })
+
+ipcRenderer.on('card-removed', (e, card) => {
+  global.cardData = undefined;
+})
