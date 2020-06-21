@@ -6,13 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder -w",
+    "build": "electron-builder —ia32",
     "watch": "nodemon --exec 'electron .'",
-    "release": "electron-builder -w --publish 'onTagOrDraft'",
+    "release": "electron-builder —ia32 --publish 'onTagOrDraft'",
     "win-cert": "electron-builder create-self-signed-cert -p vozzi"
   },
-  "repository": "https://github.com/ikakuca/electronic-service-book",
-  "homepage": "https://github.com/ikakuca/electronic-service-book",
+  "repository": "https://github.com/ikakuca/desktop-app-esb",
+  "homepage": "https://github.com/ikakuca/desktop-app-esb",
   "author": "vozzi",
   "license": "ISC",
   "devDependencies": {
@@ -38,8 +38,7 @@
     },
     "win": {
       "certificateFile": "private/vozzi.pfx",
-      "certificatePassword": "",
-      "verifyUpdateCodeSignature": false,
+      "certificatePassword": "pass3a5ignCertificate!!",
       "publisherName": "vozzi"
     },
     "linux": {

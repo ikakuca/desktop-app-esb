@@ -14,7 +14,7 @@ autoUpdater.on("update-available", () => {
     .showMessageBox({
       type: "info",
       title: "Update avaliable",
-      message: "Nova verzija je dostupna",
+      message: "Nova verzija aplikacije je dostupna",
       buttons: ["Skini sad", "Skini kasnije"],
     })
     .then((result) => {
@@ -29,7 +29,7 @@ autoUpdater.on("update-downloaded", () => {
     .showMessageBox({
       type: "info",
       title: "Update downloaded",
-      message: "Instalirajte novu verziju",
+      message: "Instalirajte novu verziju aplikacije",
       buttons: ["Instaliraj", "Kasnije"],
     })
     .then((result) => {
