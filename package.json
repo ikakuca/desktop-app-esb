@@ -1,6 +1,6 @@
 {
   "name": "esb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Esb desktop app",
   "main": "main.js",
   "scripts": {
@@ -39,7 +39,7 @@
     "win": {
       "certificateFile": "private/vozzi.pfx",
       "certificatePassword": "pass3a5ignCertificate!!",
-      "publisherName": "vozzi"
+      "publisherName": "KOV TECHNOLOGY DOO"
     },
     "linux": {
       "category": "Utility"
